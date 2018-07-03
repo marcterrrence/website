@@ -1,0 +1,125 @@
+curl -v -X POST https://api.line.me/v2/bot/message/push \
+-H 'Content-Type:application/json' \
+-H 'Authorization: Bearer {RyW7HOQEMNMxjPw2ehyEKRH9hOt3wDAc7i9z4rkkBoUpYzRQZTs3a+GcwTxmO2ABEssR6ARu+j+FvDlkES0l1CzAIIcIfBDEpBvfJNshWrVbU9eaKbRPonxRFZ8cXv7hyO6K6HNCq/apYdfzRmV8jgdB04t89/1O/w1cDnyilFU=
+}' \
+-d '{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Marc Bot News",
+        "weight": "bold",
+        "color": "#aaaaaa",
+        "size": "sm"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://lh5.googleusercontent.com/-nucbvCHAzi23bS0c3IHMB5ub7CM7ChVTIWxt-trH6TK0LLtAfdnFmdLnS9SMr7nont8cBBAmUIf7LvblUxX=w1600-h794",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "http://MarcMandagi.ga"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 1,
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://gadgetren.com/wp-content/uploads/2018/03/Tik-Tok-Header.jpg",
+            "aspectMode": "cover",
+            "aspectRatio": "4:3",
+            "size": "sm",
+            "gravity": "bottom",
+            "action": {
+              "type": "uri",
+              "uri": "https://www.cnnindonesia.com/teknologi/20180703173156-185-311165/tik-tok-diblokir-kominfo"
+                      }
+          },
+          {
+            "type": "image",
+            "url": "https://cdn0-a.production.images.static6.com/uPBATpss9B4s5JfpRQcwrjDumJw=/640x853/smart/filters:quality(75):strip_icc():format(jpeg)/liputan6-media-production/medias/2183746/original/039381700_1525759532-SBMPTN5.jpg",
+            "aspectMode": "cover",
+            "aspectRatio": "4:3",
+            "margin": "md",
+            "size": "sm",
+            "action": {
+              "type": "uri",
+              "uri": "https://www.liputan6.com/tekno/read/3577085/yuk-cek-hasil-pengumuman-sbmptn-2018-di-sini"
+                      }
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 2,
+        "contents": [
+          {
+            "type": "text",
+            "text": "Tik Tok Diblokir Kominfo",
+            "gravity": "top",
+            "size": "xs",
+            "flex": 1,
+            "action": {
+              "type": "uri",
+              "uri": "https://www.cnnindonesia.com/teknologi/20180703173156-185-311165/tik-tok-diblokir-kominfo"
+                      }
+          },
+          {
+            "type": "text",
+            "text": "Selasa, 03/07/2018 17:37 WIB",
+            "gravity": "center",
+            "size": "xs",
+            "flex": 2,
+            "action": {
+              "type": "uri",
+              "uri": "https://www.cnnindonesia.com/teknologi/20180703173156-185-311165/tik-tok-diblokir-kominfo"
+                      }
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "Yuk, Cek Hasil Pengumuman SBMPTN 2018 di Sini",
+            "gravity": "center",
+            "size": "xs",
+            "flex": 2,
+            "action": {
+              "type": "uri",
+              "uri": "https://www.liputan6.com/tekno/read/3577085/yuk-cek-hasil-pengumuman-sbmptn-2018-di-sini"
+                      }
+            
+          },
+          {
+            "type": "text",
+            "text": "03 Jul 2018, 12:00 WIB",
+            "gravity": "bottom",
+            "size": "xs",
+            "flex": 1,
+            "action": {
+              "type": "uri",
+              "uri": "https://www.liputan6.com/tekno/read/3577085/yuk-cek-hasil-pengumuman-sbmptn-2018-di-sini"
+                      }
+          }
+          
+        ]
+      }
+    ]
+  }
+}'
